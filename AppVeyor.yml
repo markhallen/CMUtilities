@@ -17,4 +17,4 @@ build: false
 
 #Kick off the CI/CD pipeline
 test_script:
-  - ps: . .\CMLimitingCollection.Build.ps1
+  - ps: . .\Build.ps1
