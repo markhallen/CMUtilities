@@ -8,9 +8,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-PowerShell
-The SCCM console is required
-An account with permission to modify collections
+* PowerShell
+* The SCCM console is required
+* An account with permission to modify collections
 
 ### Installing
 
