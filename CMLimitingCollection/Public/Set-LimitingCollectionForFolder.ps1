@@ -29,7 +29,7 @@ function Set-LimitingCollectionForFolder {
     References:
 
     .EXAMPLE
-    Set-LimitingCollection -Collections PR1 -LimitingCollectionName "Windows desktops"
+    Set-LimitingCollection -Path "\Software Library\Overview\Application Management\Applications" -LimitingCollectionName "Windows desktops"
     Set the limiting collection to "Windows desktops"
     #>
     [CmdletBinding( DefaultParameterSetName = "LimitingCollectionName" ) ]
