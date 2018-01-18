@@ -28,7 +28,7 @@ Copy locally and then import the module.
 
 1. Copy the folder path from the console folder
 
-![Image of copying the console folder path](https://markallenit.com/blog/wp-content/uploads/2017/12/Copy-console-path.png)
+![Image of copying the console folder path](https://markallenit.com/blog/wp-content/uploads/2018/01/Copy-console-path.png)
 
 2. Invoke the Set-LimitingCollection funtion and paste the console folder path and the target limiting collection name
 
