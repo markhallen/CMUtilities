@@ -32,7 +32,7 @@ Copy locally and then import the module.
 
 2. Invoke the Set-LimitingCollection funtion and paste the console folder path and the target limiting collection name
 
-`Set-LimitingCollection -Path "\Software Library\Overview\Application Management\Applications" -LimitingCollectionName "Windows desktops"`
+`Set-LimitingCollection -Path "\Assets and Compliance\Overview\Device Collections\Applications" -LimitingCollectionName "Windows desktops"`
 
 ### Syntax
 
