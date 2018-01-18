@@ -131,19 +131,19 @@ InModuleScope "CMLimitingCollection" {
 
         Context "will not accpet an invalid path" {
             It "fails" {
-               { Set-LimitingCollectionForFolder -Path $InvalidParameters.Path -LimitingCollectionId $ValidParameters.LimitingCollectionId } | Should Throw
+               { Set-LimitingCollectionForFolder -Path $InvalidParameters.Path -LimitingCollectionId $ValidParameters.LimitingCollectionId } | Should -Throw
             }
         }
 
         Context "will not accpet an invalid collection id" {
             It "fails" {
-               { Set-LimitingCollectionForFolder -Path $ValidParameters.Path -LimitingCollectionId $InvalidParameters.LimitingCollectionId } | Should Throw
+               { Set-LimitingCollectionForFolder -Path $ValidParameters.Path -LimitingCollectionId $InvalidParameters.LimitingCollectionId } | Should -Throw
             }
         }
 
         Context "will not accpet an invalid collection name" {
             It "fails" {
-                { Set-LimitingCollectionForFolder -Path $ValidParameters.Path -LimitingCollectionName $InvalidParameters.LimitingCollectionName } | Should Throw
+                { Set-LimitingCollectionForFolder -Path $ValidParameters.Path -LimitingCollectionName $InvalidParameters.LimitingCollectionName } | Should -Throw
             }
         }
     }

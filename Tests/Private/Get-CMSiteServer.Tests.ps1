@@ -20,7 +20,7 @@ InModuleScope "CMLimitingCollection" {
         }
         Mock Test-Path { return $false }
         Mock Get-ItemProperty { return $null }
-        Mock Write-Error
+        Mock Write-Error { Throw }
 
         Context "returns the server when found in the default registry" {
             Mock Test-Path { return $true } -ParameterFilter { $Path -eq $ValidParameters.Reg64bit }
@@ -86,7 +86,7 @@ InModuleScope "CMLimitingCollection" {
 
         Context "the registry values cannot be found" {
             It "throws an exception" {
-               Get-CMSiteServer | Should Throw
+               { Get-CMSiteServer } | Should -Throw
             }
             It 'calls Test-Path exactly twice' {
                 Assert-MockCalled Test-Path -Times 2 -Exactly
