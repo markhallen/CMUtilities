@@ -22,7 +22,9 @@ Copy locally and then import the module.
 
 #### From PowerShell Gallery
 
-`Import-Module CMLimitingCollection`
+`Import-Module -Name CMLimitingCollection`
+
+You can view the module on the PowerShellGallery [here](https://www.powershellgallery.com/packages/CMLimitingCollection).
 
 ### Basic usage
 
