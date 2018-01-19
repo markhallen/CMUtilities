@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/urnf3f2tbh9wu1ev/branch/master?svg=true)](https://ci.appveyor.com/project/markhallen/cmlimitingcollection/branch/master)
+
 # CMLimitingCollection
 
 In Microsoft System Center Configuration Manager, given a collection folder the limiting collection of each collection therein will be set to the value specified.
