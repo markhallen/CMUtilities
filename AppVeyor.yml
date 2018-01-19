@@ -17,4 +17,8 @@ build: false
 
 #Kick off the CI/CD pipeline
 test_script:
+<<<<<<< HEAD
   - ps: . .\build\Start-Build.ps1 -Task Deploy
+=======
+  - ps: .\Build.ps1
+>>>>>>> de193ef91e19f972bc50fecc285d0ecd830c8070
