@@ -10,10 +10,13 @@ $here = $here -replace 'Tests', 'CMLimitingCollection'
 
 # Use InModuleScope to gain access to private functions
 InModuleScope "CMLimitingCollection" {
-    Describe 'Private\Mount-CMDrive' -Tags @("01","helper","private") {
+    Describe 'Private\Mount-CMDrive' -Tags @("01","helper","private","mount") {
         $ValidParameters = @{
             'SiteCode' = 'A01'
             'Name' = 'CurrentDrive'
+        }
+        if ($null -eq $env:SMS_ADMIN_UI_PATH) {
+            $env:SMS_ADMIN_UI_PATH = 'C:\Program Files (x86)\ConfigMgrConsole\bin\i386'
         }
         Mock Get-CMSiteCode { return $ValidParameters.SiteCode }
         Mock Import-Module
