@@ -45,6 +45,7 @@ InModuleScope "CMLimitingCollection" {
 
         function Get-CMCollection ($Id) { return $ValidResponse }
         function Set-CMCollection { return $null }
+        if(-Not (Get-Command Get-WmiObject -ErrorAction SilentlyContinue)){function Get-WmiObject ($ComputerName,$Namespace,$Query) { return $ContainerItems }}
 
         Mock Get-CMSiteCode { return $ValidParameters.SiteCode }
         Mock Get-CMSiteServer { return $ValidParameters.SiteServer }
