@@ -1,8 +1,10 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/urnf3f2tbh9wu1ev/branch/master?svg=true)](https://ci.appveyor.com/project/markhallen/cmlimitingcollection/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/urnf3f2tbh9wu1ev/branch/master?svg=true)](https://ci.appveyor.com/project/markhallen/cmutilities/branch/master)
 
-# CMLimitingCollection
+# CMUtilities
 
-In Microsoft System Center Configuration Manager, given a collection folder the limiting collection of each collection therein will be set to the value specified.
+In Microsoft System Center Configuration Manager we can automate recurring tasks or batch jobs using PowerShell.
+
+Limiting collections - given a collection folder the limiting collection of each collection therein will be set to the value specified.
 
 ## Getting Started
 
